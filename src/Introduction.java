@@ -5,17 +5,15 @@ public class Introduction {
 	
 	public static void main(String[] args){
 		
-		//Invoke chromedriver
+		//Invoke ChromeDriver
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\dimitar\\Documents\\chromedriver.exe");
 		
 		//Create a Driver object
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://tsvetkovdimitar.com");
+		driver.get("http://google.com");
 		String title = driver.getTitle();
 		
-	
-		
-		if("Daniela Tsvetkova Portfolio".equals(title)){
+		if("Google".equals(title)){
 			
 			System.out.println("Title is correct!");
 			
